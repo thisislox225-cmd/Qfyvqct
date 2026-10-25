@@ -1,0 +1,16 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <TargetFramework>net6.0</TargetFramework>
+    <AssemblyName>FlyMod</AssemblyName>
+    <LangVersion>latest</LangVersion>
+    <ImplicitUsings>disable</ImplicitUsings>
+  </PropertyGroup>
+
+  <!-- Copy these DLLs from your Bonelab MelonLoader folders into a "libs" folder next to this file:
+       MelonLoader/net6/MelonLoader.dll, 0Harmony.dll, Il2CppInterop.Runtime.dll
+       MelonLoader/Il2CppAssemblies/*.dll (Assembly-CSharp, Il2Cppmscorlib, UnityEngine.*, Il2CppSLZ.*)
+       Mods/BoneLib.dll -->
+  <ItemGroup>
+    <Reference Include="libs\*.dll" />
+  </ItemGroup>
+</Project>
